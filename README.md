@@ -377,6 +377,11 @@ One flag matters more than the rest. `cache_prompt: false` is set on every run;
 leave it on and the second pass over a prompt reports a cache hit rather than
 your hardware.
 
+Every campaign behind the comparison tables is in
+[`results/measurements.csv`](results/measurements.csv), one row per target per
+run, including two rows whose quality score is a harness artefact rather than a
+model result. `results/README.md` says which and why.
+
 For sweeping an endpoint more broadly than prompt length, I use
 [LLM-Inference-Toolkit](https://github.com/tahircengiz/LLM-Inference-Toolkit),
 which also installs nothing. To work out whether a model and context will fit
